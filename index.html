@@ -2,97 +2,51 @@
 <html lang="en"> 
 	<head> 
 		<meta charset="UTF-8" >
-		<meta name="description" content="Biography of my cat Cuddles" >
-		<meta name="keywords" content="cuddles,cat,female,old" >
+		<meta name="description" content="Create a Limerick of yourself!" >
+		<meta name="keywords" content="create,make,a,limerick,poem,rhyme" >
 		<meta name="author" content="Sam Schoonhoven" >
 		<meta name="robots" content="index,follow" >
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-		<title>Cuddles the Cat</title>  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" > 
+        <link rel="stylesheet" href="q2.css">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="q2.js"></script>
+        <title>Create a Limerick</title> 
 	</head>
 
 	<body> 
+        <header>
+            <h1>Create a Limerick</h1>
+        </header>
         
-            <header>
-                <h1><strong>Cuddles the Cat</strong></h1>
-            </header>
-            
-        <section>
-            <header>
-                <h2>Introduction</h2>
-            </header>
-                
-            <p>
-                Cuddles is a 13 year old female cat which my family has had since
-                near her birth. She has been a wonderful addition to the family who 
-                spreads joy and affection with her wherever her travels take her.
-                <br>Here is a photo of her in action!
-            </p>
+        <section> <!-- question and answer section -->
+            <div id="questions">
+                <h2>Answer these questions:</h2>
+                <p>What is your name? <input type="text" id="name"/></p>
+                <p>Where are you from? <input type="text" id="from"/></p>
+                <p>What is a nickname or adjective that rhymes with your previous answer? <input type="text" id="adj1"/></p>
+                <p>Give another nickname or adjective that rhymes with your previous answer: <input type="text" id="adj2"/></p>
+                <p>Take your pick:</p>
+                    <input type="radio" name="choice" value="cricket" checked="checked">Cricket</input><br>
+                    <input type="radio" name="choice" value="cake">Cake</input><br>
+                    <input type="radio" name="choice" value="child">Wild</input><br>
+                    
 
-            <figure>
-                <img src="cuddles1.jpg" alt="Cuddles waving" 
-                title="Cuddles waving" style="width: 250px; height: 400px;" >
-            </figure>
+                <br>
+                <button id="dolimerick">Limerick It!</button>
+                <br><br>
+            </div>
         </section>
 
-        <section>
-            <header>
-                <h2>Lifestyle</h2>
-            </header>
-
-            <p>
-                She has a very exciting life around our house. Some of her favourite
-                activities include:
-            </p>
-            <ul>
-                <li>sleeping</li>
-                <li>eating</li>
-                <li>relaxing in the sun</li>
-            </ul>
-
-            <figure>
-                <img src="cuddles2.jpg" alt="Cuddles eating" 
-                title="Cuddles eating" style="width: 250px; height: 400px;" >
-            </figure>
+        <section> <!-- result section -->
+            <div id="results"></div>
+            <br>
+            <button id="doquestions">Try Again!</button>
+            <br>
         </section>
+        <br>
 
-        <section>
-            <p>
-                Our family has had a total of 3 cats, but only Cuddles has stuck 
-                it out this long:
-            </p>
-
-            <table border="1">
-                <tr>
-                    <th>Order</th>
-                    <th>Cat Name</th>
-                    <th>Passed?</th>
-                </tr>
-                <tr>
-                    <td>1st</td>
-                    <td>Baby</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>2nd</td>
-                    <td>Cuddles</td>
-                    <td>No</td>
-                </tr>
-                <tr>
-                    <td>3rd</td>
-                    <td>Puddles</td>
-                    <td>Yes</td>
-                </tr>
-            </table>
-
-            <p>
-                And we hope she can stick it out for many years longer!
-            </p>
-
-            <figure>
-                <img src="cuddles3.jpg" alt="Cuddles' face" 
-                title="Cuddles' face" style="width: 300px; height: 400px;" >
-            </figure>
-        </section>
-
+        <footer>
+				<p class="p1">&copy; Sam Schoonhoven 2023 | Contact: 902-300-8182</p>
+        </footer>
 	</body> 
 </html>
