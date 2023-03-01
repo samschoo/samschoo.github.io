@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(146, 31, 3);
+    font-family: 'Gill Sans MT', sans-serif;
+    text-align: center;
+    color:rgb(199, 186, 8);
+}
+h1{
+    font-size: 37px;
+}
+h2{
+    font-style: italic;
+    font-size: 22px;
+}
+p{
+    margin: auto;
+    width: 55%;
+    font-size: 17px;
+    padding: 5px;
+}
+p.p1{
+    margin: auto;
+    width: 55%;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 10px;
+}
+button{
+    background-color: rgb(199, 186, 8);
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(146, 31, 3);
+    padding: 5px;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: rgb(146, 31, 3);
+    color: rgb(199, 186, 8);
+}
+footer{
+    background-color: rgb(199, 186, 8);
+    color: rgb(146, 31, 3);
+    border-radius: 15px;
+}
